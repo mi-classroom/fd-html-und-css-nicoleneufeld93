@@ -16,7 +16,7 @@
   padding: var(--s) var(--m) var(--s) var(--s);
   position: relative;
 
-  &::before{
+  &::before {
     position: absolute;
     font-size: var(--xxl);
     display: flex;
@@ -27,18 +27,19 @@
     bottom: 0;
   }
 
-  p, address{
+  p,
+  address {
     margin: 0;
     font-style: normal;
     margin-left: var(--xxxl);
     line-height: var(--lh-tight);
   }
 
-  p{
+  p {
     font-weight: var(--fw-medium);
   }
 
-  address{
+  address {
     font-size: smaller;
   }
 }

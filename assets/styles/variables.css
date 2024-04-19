@@ -23,4 +23,9 @@
 
   --color-light: #e8e8e8;
   --color-lightest: #fff;
+
+  --color-text: #000000;
+  --color-th-pink: #862584;
+  --color-th-orange: #ea5b0c;
+  --color-th-rot: #c60c0f;
 }
