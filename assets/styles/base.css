@@ -32,4 +32,10 @@ h3 {
   background-color: var(--color-th-orange);
   color: var(--color-light);
   font-size: var(--m);
+  margin-top: 2%;
+}
+
+.header {
+  background-color: var(--color-lightest);
+  margin-top: 0%;
 }

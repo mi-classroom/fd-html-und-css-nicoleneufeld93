@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ProjectSurvival4All - Survival-Tipps für die Projektarbeit</title>
 
-    <link href="/assets/styles/reset.css" rel="reset" />
+    <link href="/assets/styles/reset.css" rel="stylesheet" />
     <link href="assets/styles/variables.css" rel="stylesheet" />
-    <link href="/assets/styles/base.css" rel="stylesheet" />
-    <link href="assets/styles/components.css" rel="components" />
-    <link href="assets/styles/fonts.css" rel="fonts" />
-    <link href="assets/styles/icons.css" rel="icons" />
+    <link href="assets/styles/base.css" rel="stylesheet" />
+    <link href="assets/styles/fonts.css" rel="stylesheet" />
+    <link href="assets/styles/icons.css" rel="stylesheet" />
+    <link href="assets/styles/components.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="header">
     <header>
-      <h1>
-        <img src="./assets/images/th koeln logo.svg" alt="th-koln-header" />
-      </h1>
+      <div>
+        <h1>
+          <img src="./assets/images/th-koeln-logo.svg" alt="th-koln-header" />
+        </h1>
     </header>
+    </div>
     <div class="welcome-banner">
       <h2>Willkommen!</h2>
       <p>
@@ -37,46 +40,52 @@
     <main>
       <h2>Favoriten</h2>
       <ul>
-        <li>
-          Wie baue ich eine Präsentation auf?
-          <p>Monika Engelen</p>
+        <li class="fav-item">
+          <span class=Wie baue ich eine Präsentation auf?
+          <p class="first-p">Monika Engelen</p>
         </li>
-        <li>
+        <li class="fav-item">
           Wie erstelle ich eine Agenda?
-          <p>Raphaela Groten</p>
+          <p class="first-p">Raphaela Groten</p>
         </li>
-        <li>
+        <li class="fav-item">
           Wie priorisiere ich (ein Backlog)?
-          <p>Raphaela Groten</p>
+          <p class="first-p">Raphaela Groten</p>
         </li>
-        <li>
+        <li class="fav-item">
           Wie halte ich einen Pitch?
-          <p>Monika Engelen</p>
+          <p class="first-p">Monika Engelen</p>
         </li>
-        <li>
+        <li class="fav-item">
           Wie baue ich eine Präsentation auf?
-          <p>Monika Engelen</p>
+          <p class="first-p">Monika Engelen</p>
         </li>
       </ul>
 
       <h2>Von deinem ILU Schreibtisch</h2>
       <ul>
-        <li><a href="#">Datenbanken 1</a></li>
-        <li><a href="#">Kommunikationstechnik und Netze</a></li>
-        <li><a href="#">Paradigmen der Programmierung</a></li>
-        <li><a href="#">Audiovisuelles Medienprojekt</a></li>
-        <li><a href="#">Grundlagen des Web</a></li>
-        <li><a href="#">Screendesign</a></li>
-        <li><a href="#">Datenbanken 1</a></li>
+        <li class="fav-item" a href="#">Datenbanken 1</a></li>
+        <li class="fav-item" a href="#">Kommunikationstechnik und Netze</a></li>
+        <li class="fav-item" a href="#">Paradigmen der Programmierung</a></li>
+        <li class="fav-item" a href="#">Audiovisuelles Medienprojekt</a></li>
+        <li class="fav-item" a href="#">Grundlagen des Web</a></li>
+        <li class="fav-item" a href="#">Screendesign</a></li>
       </ul>
 
       <h2>Verlauf</h2>
-      <img
-        src="./assets/images/rednerin-praesentation.jpg"
-        alt="rednerin-praesentation#"
-        width="400"
-        height="250"
-      />
+      <ul class="card-grid">
+        <li class="card-grid">
+          <figure>
+            <img class="card-grid"
+              src="./assets/images/rednerin-praesentation.jpg"
+              alt="rednerin-praesentation"
+              width="500"
+              height="400"
+            />
+            <figcaption>Test</figcaption>
+          </figure>
+        </li>
+      </ul>
     </main>
 
     <footer>
