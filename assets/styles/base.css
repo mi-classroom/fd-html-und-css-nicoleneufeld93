@@ -3,6 +3,7 @@ body {
   background-color: var(--color-light);
   font-family: source-sans-3, Arial, sans-serif;
   font-weight: var(--fw-regular);
+  text-align: justify;
   font-size: var(--m);
   margin: 0;
 }
@@ -16,25 +17,43 @@ h6 {
   font-weight: var(--fw-bold);
 }
 
+main {
+  margin: var(--m);
+}
+
 h1 {
   font-size: var(--xl);
   margin-top: 0;
+  width: 150px;
 }
 
 h2 {
-  font-size: var(--l);
+  font-size: var(--xl);
+  padding-top: var(--xs);
 }
 
 h3 {
+  font-size: var(--l);
+  padding: var(--m);
+}
+
+h4 {
   font-size: var(--m);
+  padding: var(--s);
+  line-height: var(--lh-small);
+}
+
+li {
+  list-style-type: none;
 }
 
 .welcome-banner {
-  padding: var(--m);
   background-color: var(--color-th-orange);
   color: var(--color-light);
   font-size: var(--m);
   margin-top: 2%;
+  margin-left: var(--m);
+  padding: var(--s);
 }
 
 .header {

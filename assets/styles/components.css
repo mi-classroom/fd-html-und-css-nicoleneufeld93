@@ -1,8 +1,10 @@
-.fav-item {
+.list {
   background-color: var(--color-lightest);
   display: inline-block;
   padding: var(--s) var(--m) var(--s) var(--s);
   position: relative;
+  margin: var(--xs);
+  width: 410px;
 
   &::before {
     position: absolute;
@@ -14,20 +16,18 @@
     top: 0;
     bottom: 0;
   }
-  .p {
+  p {
     margin: 0;
-    font-style: normal;
-    margin-left: var(--xxxl);
-    line-height: var(--lh-tight);
+    margin-left: var(--xs);
+    line-height: var(--lh-normal);
     font-weight: var(--fw-medium);
-  }
-
-  .li {
-    background-color: var(--color-th-orange);
   }
 
   .first-p {
     font-size: smaller;
+    margin: 0;
+    line-height: var(--lh-normal);
+    font-weight: var(--fw-medium);
   }
 }
 
