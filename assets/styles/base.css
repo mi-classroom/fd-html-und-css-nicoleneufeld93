@@ -4,6 +4,7 @@ body {
   font-family: source-sans-3, Arial, sans-serif;
   font-weight: var(--fw-regular);
   font-size: var(--m);
+  margin: 0;
 }
 
 h1,
@@ -17,6 +18,7 @@ h6 {
 
 h1 {
   font-size: var(--xl);
+  margin-top: 0;
 }
 
 h2 {
