@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProjectSurvival4All - Survival-Tipps für die Projektarbeit</title>
 
-    <link href="/assets/styles/reset.css" rel="stylesheet" />
-    <link href="assets/styles/variables.css" rel="stylesheet" />
-    <link href="assets/styles/base.css" rel="stylesheet" />
-    <link href="assets/styles/fonts.css" rel="stylesheet" />
-    <link href="assets/styles/icons.css" rel="stylesheet" />
-    <link href="assets/styles/components.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/styles/reset.css">
+    <link rel="stylesheet" href="/assets/styles/variables.css">
+    <link rel="stylesheet" href="/assets/styles/base.css">
+    <link rel="stylesheet" href="/assets/styles/fonts.css">
+    <link rel="stylesheet" href="/assets/styles/icons.css">
+    <link rel="stylesheet" href="/assets/styles/components.css">
   </head>
-  <body>
-    <div class="header">
-    <header>
-      <div>
-        <h1>
-          <img src="./assets/images/th-koeln-logo.svg" alt="th-koln-header" />
-        </h1>
+
+<body>
+  <header class="logo">
+   <h1><img src="./assets/images/th-koeln-logo.svg" alt="ProjectSurvival4All Logo"></h1>
+   <span class="icon icon-xl">menu</span>
+
+   <ul class="header-grid">
+    <li><a href="#">Mein Bereich</a></li>
+    <li><a href="#">Suche</a></li>
+    <li><a href="#">Aktuelles</a></li>
+   </ul>
+    <div class="search-wrapper">
+      <input class="search-input" type="text" placeholder="Suchen">
+      <button class="search-button"><span class="icon icon-m">search</span></button>
+ 
     </header>
-    </div>
+
+  <main>
     <div class="welcome-banner">
       <h2>Willkommen!</h2>
       <p>
@@ -38,57 +47,111 @@
       </p>
     </div>
     <main>
-      <h3>Favoriten</h3>
-      <ul>
-        <li class="list">
-          Wie baue ich eine Präsentation auf?
-          <p class="first-p">Monika Engelen</p>
-        </li>
-        <li class="list">
-          Wie erstelle ich eine Agenda?
-          <p class="first-p">Raphaela Groten</p>
-        </li>
-        <li class="list">
-          Wie priorisiere ich (ein Backlog)?
-          <p class="first-p">Raphaela Groten</p>
-        </li>
-        <li class="list">
-          Wie halte ich einen Pitch?
-          <p class="first-p">Monika Engelen</p>
-        </li>
-        <li class="list">
-          Wie baue ich eine Präsentation auf?
-          <p class="first-p">Monika Engelen</p>
-        </li>
-      </ul>
+      <section>
+        <h2>Favoriten</h2>
+        <ul class="grid-list">
+          <li class="has-icon icon-document">    
+            <p>Wie baue ich eine Präsentation auf?</p>
+            <address>Monika Engelen</address>
+          </li>
+          <li class="has-icon icon-video"> 
+            <p>Wie erstelle ich eine Agenda?</p>
+            <address>Raphaela Groten</address>
+          </li>
+          <li class="has-icon icon-video"> 
+            <p>Wie priorisiere ich (ein Backlog)?</p>
+            <address>Raphaela Groten</address>
+          </li>
+          <li class="has-icon icon-video"> 
+            <p>Wie halte ich einen Pitch?</p>
+            <address>Monika Engelen</address>
+          </li>
+          <li class="has-icon icon-document"> 
+            <p>Wie baue ich eine Präsentation auf?</p>
+            <address>Raphaela Groten</address>
+          </li>
+        </ul>
+      </section>
 
-      <h3>Von deinem ILU Schreibtisch</h3>
-      <ul>
-        <li class="list" a href="#">Datenbanken 1</a></li>
-        <li class="list" a href="#">Kommunikationstechnik und Netze</a></li>
-        <li class="list" a href="#">Paradigmen der Programmierung</a></li>
-        <li class="list" a href="#">Audiovisuelles Medienprojekt</a></li>
-        <li class="list" a href="#">Grundlagen des Web</a></li>
-        <li class="list" a href="#">Screendesign</a></li>
-      </ul>
+      <section>
+        <h3>Von deinem ILU Schreibtisch</h3>
+        <ul class="grid-list">
+          <li><span class="icon icon-l">folder</span>Datenbanken 1</li>
+          <li><span class="icon icon-l">folder</span>Kommunikationstechnik und Netze</li>
+          <li><span class="icon icon-l">folder</span>Paradigmen der Programmierung</li>
+          <li><span class="icon icon-l">folder</span>Audiovisuelles Medienprojekt</li>
+          <li><span class="icon icon-l">folder</span>Grundlagen des Web</li>
+          <li><span class="icon icon-l">folder</span>Screendesign</li>
+          <li><span class="icon icon-l">folder</span>Mensch-Computer Interaktion</li>
+        </ul>
+      </section>
 
-      <h3>Verlauf</h3>
-      <ul class="card-grid">
-        <li class="card-grid">
-          <figure>
-            <img class="card-grid"
-              src="./assets/images/rednerin-praesentation.jpg"
-              alt="rednerin-praesentation"
-              width="500"
-              height="400"
-            />
-            <figcaption></figcaption>
-          </figure>
-        </li>
-      </ul>
+      <section>
+        <h2>Verlauf</h2>
+        <ul class="card-grid">
+          <li class="is-hidden">
+            <article>
+               <figure>
+                <img src="/assets/images/praesentation-aufbau.jpg" alt="Präsentation Aufbau">
+                <header>
+                  <h3>Wie baue ich eine Präsentation auf?</h3>
+                  <p>von <strong>Monika Engelen</strong></p>
+                </header>
+              </figure>
+          </li>
+          <li class="is-hidden">
+            <article>
+               <figure>
+                <img src="/assets/images/praesentation-aufbau.jpg" alt="Präsentation Aufbau">
+                <header>
+                  <h3>Wie baue ich eine Präsentation auf?</h3>
+                  <p>von <strong>Monika Engelen</strong></p>
+                </header>
+              </figure>
+          </li>
+          <li class="is-hidden">
+            <article>
+               <figure>
+                <img src="/assets/images/praesentation-aufbau.jpg" alt="Präsentation Aufbau">
+                <header>
+                  <h3>Wie baue ich eine Präsentation auf?</h3>
+                  <p>von <strong>Monika Engelen</strong></p>
+                </header>
+              </figure>
+          </li>
+          <li class="is-hidden">
+            <article>
+               <figure>
+                <img src="/assets/images/praesentation-aufbau.jpg" alt="Präsentation Aufbau">
+                <header>
+                  <h3>Wie baue ich eine Präsentation auf?</h3>
+                  <p>von <strong>Monika Engelen</strong></p>
+                </header>
+              </figure>
+          </li>
+          <li class="is-hidden">
+            <article>
+               <figure>
+                <img src="/assets/images/praesentation-aufbau.jpg" alt="Präsentation Aufbau">
+                <header>
+                  <h3>Wie baue ich eine Präsentation auf?</h3>
+                  <p>von <strong>Monika Engelen</strong></p>
+                </header>
+              </figure>
+          </li>
+          <li class="is-hidden">
+            <article>
+               <figure>
+                <img src="/assets/images/praesentation-aufbau.jpg" alt="Präsentation Aufbau">
+                <header>
+                  <h3>Wie baue ich eine Präsentation auf?</h3>
+                  <p>von <strong>Monika Engelen</strong></p>
+                </header>
+              </figure>
+          </li>
     </main>
 
-    <footer>
+    <div class="footer">
       <h4>Barrierefreiheit</h4>
       <ul>
         <li><a href="#">leichte Sprache</a></li>
@@ -109,6 +172,6 @@
       <ul>
       <li><a href="http://127.0.0.1:5500/pages/about-the-project.html">Über das Projekt</a></li>
       </ul>
-    </footer>
+    </div>
   </body>
 </html>

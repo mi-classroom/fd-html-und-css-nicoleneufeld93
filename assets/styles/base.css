@@ -1,11 +1,16 @@
+/* stylelint-disable order/properties-order */
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
+  margin: 0;
   background-color: var(--color-light);
-  font-family: source-sans-3, Arial, sans-serif;
+  font-family: "source-sans-3", Arial, sans-serif;
+  font-size: var(--m);
   font-weight: var(--fw-regular);
   text-align: justify;
-  font-size: var(--m);
-  margin: 0;
 }
 
 h1,
@@ -22,24 +27,24 @@ main {
 }
 
 h1 {
-  font-size: var(--xl);
-  margin-top: 0;
   width: 150px;
+  margin-top: 0;
+  font-size: var(--xl);
 }
 
 h2 {
-  font-size: var(--xl);
   padding-top: var(--xs);
+  font-size: var(--xl);
 }
 
 h3 {
-  font-size: var(--l);
   padding: var(--m);
+  font-size: var(--l);
 }
 
 h4 {
+  padding: var(--m);
   font-size: var(--m);
-  padding: var(--s);
   line-height: var(--lh-small);
 }
 
@@ -48,19 +53,26 @@ li {
 }
 
 .welcome-banner {
+  padding-bottom: var(--xxxl);
+  padding-left: var(--xs);
+  padding-right: var(--xs);
+  margin-left: 20px;
   background-color: var(--color-th-orange);
   color: var(--color-light);
   font-size: var(--m);
-  margin-top: 2%;
-  margin-left: var(--m);
-  padding: var(--s);
 }
 
-.header {
+.logo {
+  width: 100%;
   background-color: var(--color-lightest);
-  margin-top: 0%;
 }
 
 a {
   text-decoration: none;
+}
+
+.footer {
+  margin-top: 2%;
+  background-color: var(--color-grey-dark);
+  color: var(--color-lightest);
 }
