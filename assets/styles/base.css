@@ -22,10 +22,6 @@ h6 {
   font-weight: var(--fw-bold);
 }
 
-main {
-  margin: var(--m);
-}
-
 h1 {
   width: 150px;
   margin-top: 0;
@@ -35,11 +31,13 @@ h1 {
 h2 {
   padding-top: var(--xs);
   font-size: var(--xl);
+  margin: var(--l);
 }
 
 h3 {
-  padding: var(--m);
+  padding-top: var(--xs);
   font-size: var(--l);
+  margin: var(--xl);
 }
 
 h4 {
@@ -56,15 +54,33 @@ li {
   padding-bottom: var(--xxxl);
   padding-left: var(--xs);
   padding-right: var(--xs);
-  margin-left: 20px;
+  margin-left: var(--l);
+  margin-right: var(--l);
   background-color: var(--color-th-orange);
   color: var(--color-light);
   font-size: var(--m);
 }
 
-.logo {
-  width: 100%;
+.main-nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--color-lightest);
+  padding-bottom: 18px;
+  margin: 0;
+
+  .logo {
+    width: 100%;
+    margin: var(--l);
+  }
+
+  .burger-menu {
+    position: absolute;
+    top: 400px;
+    right: 47px;
+  }
 }
 
 a {

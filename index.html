@@ -1,72 +1,82 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ProjectSurvival4All - Survival-Tipps für die Projektarbeit</title>
 
-    <link rel="stylesheet" href="/assets/styles/reset.css">
-    <link rel="stylesheet" href="/assets/styles/variables.css">
-    <link rel="stylesheet" href="/assets/styles/base.css">
-    <link rel="stylesheet" href="/assets/styles/fonts.css">
-    <link rel="stylesheet" href="/assets/styles/icons.css">
-    <link rel="stylesheet" href="/assets/styles/components.css">
+    <link rel="stylesheet" href="/assets/styles/reset.css" />
+    <link rel="stylesheet" href="/assets/styles/variables.css" />
+    <link rel="stylesheet" href="/assets/styles/base.css" />
+    <link rel="stylesheet" href="/assets/styles/fonts.css" />
+    <link rel="stylesheet" href="/assets/styles/icons.css" />
+    <link rel="stylesheet" href="/assets/styles/components.css" />
   </head>
 
-<body>
-  <header class="logo">
-   <h1><img src="./assets/images/th-koeln-logo.svg" alt="ProjectSurvival4All Logo"></h1>
-   <span class="icon icon-xl">menu</span>
-
-   <ul class="header-grid">
-    <li><a href="#">Mein Bereich</a></li>
-    <li><a href="#">Suche</a></li>
-    <li><a href="#">Aktuelles</a></li>
-   </ul>
-    <div class="search-wrapper">
-      <input class="search-input" type="text" placeholder="Suchen">
-      <button class="search-button"><span class="icon icon-m">search</span></button>
- 
+  <body>
+    <header class="main-nav">
+      <h1>
+        <img
+          class="logo"
+          src="./assets/images/th-koeln-logo.svg"
+          alt="ProjectSurvival4All Logo"
+        />
+      </h1>
+      <form class="search-wrapper">
+        <input class="search-input" type="text" placeholder="Suchen" />
+        <button class="search-button">
+          <span class="icon icon-m">search</span>
+        </button>
+      </form>
+      <span class="menu icon icon-xl">menu</span>
     </header>
 
-  <main>
-    <div class="welcome-banner">
-      <h2>Willkommen!</h2>
-      <p>
-        In der Bearbeitung von Projekten ist es von entscheidender Bedeutung,
-        nicht nur theoretisches Wissen zu besitzen, sondern auch praxiserprobte
-        Methoden, bewährte Tricks und den souveränen Umgang mit müglichen
-        Stolpersteinen zu beherrschen. Hier setzt ProjectSurvival4All an, eine
-        innovative Plattform in Zusammenarbeit mit der TH Köln, die entwickelt
-        wurde, um dich und dein Team bei Projektarbeiten und im Studium optimal
-        zu unterstützen. Hier erwarten dich erstklassige Inhalte von erfahrenen
-        Dozenten, die dir Best Practices und kuratiertes Wissen auf eine
-        interessante und effiziente Weise vermitteln. Schau einfach mal vorbei
-        und entdecke, wie ProjectSurvival4All deine Projekterfahrung auf das
-        nächste Level heben kann.
-      </p>
-    </div>
     <main>
+      <nav class="tab-nav">
+        <ul>
+          <li><a href="#">Mein Bereich</a></li>
+          <li><a href="#">Über das Projekt</a></li>
+          <li><a href="#">Aktuelles</a></li>
+        </ul>
+      </nav>
+
+      <div class="welcome-banner">
+        <h2>Willkommen!</h2>
+        <p>
+          In der Bearbeitung von Projekten ist es von entscheidender Bedeutung,
+          nicht nur theoretisches Wissen zu besitzen, sondern auch
+          praxiserprobte Methoden, bewährte Tricks und den souveränen Umgang mit
+          müglichen Stolpersteinen zu beherrschen. Hier setzt
+          ProjectSurvival4All an, eine innovative Plattform in Zusammenarbeit
+          mit der TH Köln, die entwickelt wurde, um dich und dein Team bei
+          Projektarbeiten und im Studium optimal zu unterstützen. Hier erwarten
+          dich erstklassige Inhalte von erfahrenen Dozenten, die dir Best
+          Practices und kuratiertes Wissen auf eine interessante und effiziente
+          Weise vermitteln. Schau einfach mal vorbei und entdecke, wie
+          ProjectSurvival4All deine Projekterfahrung auf das nächste Level heben
+          kann.
+        </p>
+      </div>
       <section>
         <h2>Favoriten</h2>
         <ul class="grid-list">
-          <li class="has-icon icon-document">    
+          <li class="has-icon icon-document">
             <p>Wie baue ich eine Präsentation auf?</p>
             <address>Monika Engelen</address>
           </li>
-          <li class="has-icon icon-video"> 
+          <li class="has-icon icon-video">
             <p>Wie erstelle ich eine Agenda?</p>
             <address>Raphaela Groten</address>
           </li>
-          <li class="has-icon icon-video"> 
+          <li class="has-icon icon-video">
             <p>Wie priorisiere ich (ein Backlog)?</p>
             <address>Raphaela Groten</address>
           </li>
-          <li class="has-icon icon-video"> 
+          <li class="has-icon icon-video">
             <p>Wie halte ich einen Pitch?</p>
             <address>Monika Engelen</address>
           </li>
-          <li class="has-icon icon-document"> 
+          <li class="has-icon icon-document">
             <p>Wie baue ich eine Präsentation auf?</p>
             <address>Raphaela Groten</address>
           </li>
@@ -77,12 +87,21 @@
         <h3>Von deinem ILU Schreibtisch</h3>
         <ul class="grid-list">
           <li><span class="icon icon-l">folder</span>Datenbanken 1</li>
-          <li><span class="icon icon-l">folder</span>Kommunikationstechnik und Netze</li>
-          <li><span class="icon icon-l">folder</span>Paradigmen der Programmierung</li>
-          <li><span class="icon icon-l">folder</span>Audiovisuelles Medienprojekt</li>
+          <li>
+            <span class="icon icon-l">folder</span>Kommunikationstechnik und
+            Netze
+          </li>
+          <li>
+            <span class="icon icon-l">folder</span>Paradigmen der Programmierung
+          </li>
+          <li>
+            <span class="icon icon-l">folder</span>Audiovisuelles Medienprojekt
+          </li>
           <li><span class="icon icon-l">folder</span>Grundlagen des Web</li>
           <li><span class="icon icon-l">folder</span>Screendesign</li>
-          <li><span class="icon icon-l">folder</span>Mensch-Computer Interaktion</li>
+          <li>
+            <span class="icon icon-l">folder</span>Mensch-Computer Interaktion
+          </li>
         </ul>
       </section>
 
@@ -91,64 +110,90 @@
         <ul class="card-grid">
           <li class="is-hidden">
             <article>
-               <figure>
-                <img src="/assets/images/praesentation-aufbau.jpg" alt="Präsentation Aufbau">
+              <figure>
+                <img
+                  src="/assets/images/praesentation-aufbau.jpg"
+                  alt="Präsentation Aufbau"
+                />
                 <header>
                   <h3>Wie baue ich eine Präsentation auf?</h3>
                   <p>von <strong>Monika Engelen</strong></p>
                 </header>
               </figure>
+            </article>
           </li>
           <li class="is-hidden">
             <article>
-               <figure>
-                <img src="/assets/images/praesentation-aufbau.jpg" alt="Präsentation Aufbau">
+              <figure>
+                <img
+                  src="/assets/images/praesentation-aufbau.jpg"
+                  alt="Präsentation Aufbau"
+                />
                 <header>
                   <h3>Wie baue ich eine Präsentation auf?</h3>
                   <p>von <strong>Monika Engelen</strong></p>
                 </header>
               </figure>
+            </article>
           </li>
           <li class="is-hidden">
             <article>
-               <figure>
-                <img src="/assets/images/praesentation-aufbau.jpg" alt="Präsentation Aufbau">
+              <figure>
+                <img
+                  src="/assets/images/praesentation-aufbau.jpg"
+                  alt="Präsentation Aufbau"
+                />
                 <header>
                   <h3>Wie baue ich eine Präsentation auf?</h3>
                   <p>von <strong>Monika Engelen</strong></p>
                 </header>
               </figure>
+            </article>
           </li>
           <li class="is-hidden">
             <article>
-               <figure>
-                <img src="/assets/images/praesentation-aufbau.jpg" alt="Präsentation Aufbau">
+              <figure>
+                <img
+                  src="/assets/images/praesentation-aufbau.jpg"
+                  alt="Präsentation Aufbau"
+                />
                 <header>
                   <h3>Wie baue ich eine Präsentation auf?</h3>
                   <p>von <strong>Monika Engelen</strong></p>
                 </header>
               </figure>
+            </article>
           </li>
           <li class="is-hidden">
             <article>
-               <figure>
-                <img src="/assets/images/praesentation-aufbau.jpg" alt="Präsentation Aufbau">
+              <figure>
+                <img
+                  src="/assets/images/praesentation-aufbau.jpg"
+                  alt="Präsentation Aufbau"
+                />
                 <header>
                   <h3>Wie baue ich eine Präsentation auf?</h3>
                   <p>von <strong>Monika Engelen</strong></p>
                 </header>
               </figure>
+            </article>
           </li>
           <li class="is-hidden">
             <article>
-               <figure>
-                <img src="/assets/images/praesentation-aufbau.jpg" alt="Präsentation Aufbau">
+              <figure>
+                <img
+                  src="/assets/images/praesentation-aufbau.jpg"
+                  alt="Präsentation Aufbau"
+                />
                 <header>
                   <h3>Wie baue ich eine Präsentation auf?</h3>
                   <p>von <strong>Monika Engelen</strong></p>
                 </header>
               </figure>
+            </article>
           </li>
+        </ul>
+      </section>
     </main>
 
     <div class="footer">
@@ -170,7 +215,11 @@
         <li><a href="#">Datenschutzhinweise</a></li>
       </ul>
       <ul>
-      <li><a href="http://127.0.0.1:5500/pages/about-the-project.html">Über das Projekt</a></li>
+        <li>
+          <a href="http://127.0.0.1:5500/pages/about-the-project.html"
+            >Über das Projekt</a
+          >
+        </li>
       </ul>
     </div>
   </body>

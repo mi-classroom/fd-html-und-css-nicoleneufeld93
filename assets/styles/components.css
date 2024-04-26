@@ -2,7 +2,7 @@
 .grid-list {
   li {
     position: relative;
-    padding: var(--xxl);
+    padding: var(--xxxl);
     margin-bottom: var(--xxl);
     background-color: var(--color-lightest);
     line-height: var(--lh-tight);
@@ -19,7 +19,7 @@
 
 .card-grid {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: lfr;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
   li {
@@ -72,14 +72,25 @@
   }
 }
 
-.header-grid {
-  display: grid;
-  background-color: white;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+.tab-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-th-orange);
 
-  a:hover {
-    background-color: var(--color-light);
-    padding: 20px 150px 30px 35px;
+  li {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: var(--xxxl);
+    background-color: var(--color-lightest);
+    line-height: var(--lh-tight);
+
+    &:hover {
+      background-color: var(--color-light);
+    }
   }
 }
