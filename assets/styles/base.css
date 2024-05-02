@@ -1,0 +1,80 @@
+/* stylelint-disable order/properties-order */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: var(--color-light);
+  font-family: "source-sans-3", Arial, sans-serif;
+  font-size: var(--m);
+  font-weight: var(--fw-regular);
+  text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--fw-bold);
+}
+
+h1 {
+  width: 150px;
+  margin-top: 0;
+  font-size: var(--xl);
+}
+
+h2 {
+  padding-top: var(--xs);
+  font-size: var(--xl);
+  margin: var(--l);
+}
+
+h3 {
+  padding-top: var(--xs);
+  font-size: var(--l);
+  margin: var(--xl);
+}
+
+h4 {
+  padding: var(--m);
+  font-size: var(--m);
+  line-height: var(--lh-small);
+}
+
+li {
+  list-style-type: none;
+}
+
+.welcome-banner {
+  padding-bottom: var(--xxxl);
+  padding-left: var(--xs);
+  padding-right: var(--xs);
+  margin-left: var(--l);
+  margin-right: var(--l);
+  background-color: var(--color-th-orange);
+  color: var(--color-light);
+  font-size: var(--m);
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 2%;
+  background-color: var(--color-grey-dark);
+  color: var(--color-lightest);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--color-lightest);
+}
