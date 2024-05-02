@@ -61,34 +61,20 @@ li {
   font-size: var(--m);
 }
 
-.main-nav {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--color-lightest);
-  padding-bottom: 18px;
-  margin: 0;
-
-  .logo {
-    width: 100%;
-    margin: var(--l);
-  }
-
-  .burger-menu {
-    position: absolute;
-    top: 400px;
-    right: 47px;
-  }
-}
-
 a {
   text-decoration: none;
 }
 
-.footer {
+footer {
   margin-top: 2%;
   background-color: var(--color-grey-dark);
   color: var(--color-lightest);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--color-lightest);
 }
